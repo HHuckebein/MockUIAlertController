@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48105E731DE81450000C8EB7 /* MockUIAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48105E721DE81450000C8EB7 /* MockUIAlertController.framework */; };
 		483E05211DE8064D00B5E4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E05201DE8064D00B5E4E4 /* AppDelegate.swift */; };
 		483E05231DE8064D00B5E4E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E05221DE8064D00B5E4E4 /* ViewController.swift */; };
 		483E05261DE8064D00B5E4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483E05241DE8064D00B5E4E4 /* Main.storyboard */; };
 		483E05281DE8064D00B5E4E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483E05271DE8064D00B5E4E4 /* Assets.xcassets */; };
 		483E052B1DE8064D00B5E4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483E05291DE8064D00B5E4E4 /* LaunchScreen.storyboard */; };
 		483E05361DE8064D00B5E4E4 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483E05351DE8064D00B5E4E4 /* ViewControllerTests.swift */; };
+		73D6C07A1EA2202E00C2BC0B /* MockUIAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D6C0791EA2202E00C2BC0B /* MockUIAlertController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		48105E3A1DE810F2000C8EB7 /* MockUIAlertControllerSampleSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MockUIAlertControllerSampleSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		48105E721DE81450000C8EB7 /* MockUIAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MockUIAlertController.framework; path = "../Source/build/Debug-iphoneos/MockUIAlertController.framework"; sourceTree = "<group>"; };
 		483E051D1DE8064D00B5E4E4 /* MockUIAlertControllerSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockUIAlertControllerSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		483E05201DE8064D00B5E4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		483E05221DE8064D00B5E4E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		483E05351DE8064D00B5E4E4 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		483E05371DE8064D00B5E4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4885FDCD1DE8AD3300A9F923 /* XcodeWarnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = XcodeWarnings.xcconfig; path = ../../Source/XcodeWarnings.xcconfig; sourceTree = "<group>"; };
+		73D6C0791EA2202E00C2BC0B /* MockUIAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MockUIAlertController.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/MockUIAlertController.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48105E731DE81450000C8EB7 /* MockUIAlertController.framework in Frameworks */,
+				73D6C07A1EA2202E00C2BC0B /* MockUIAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 		48105E711DE81450000C8EB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48105E721DE81450000C8EB7 /* MockUIAlertController.framework */,
+				73D6C0791EA2202E00C2BC0B /* MockUIAlertController.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.qualitycoding.MockUIAlertControllerSampleSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "./Tests/MockUIAlertControllerSampleSwiftTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MockUIAlertControllerSampleSwift.app/MockUIAlertControllerSampleSwift";
 			};
 			name = Debug;
@@ -355,7 +355,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.qualitycoding.MockUIAlertControllerSampleSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "./Tests/MockUIAlertControllerSampleSwiftTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MockUIAlertControllerSampleSwift.app/MockUIAlertControllerSampleSwift";
 			};
 			name = Release;

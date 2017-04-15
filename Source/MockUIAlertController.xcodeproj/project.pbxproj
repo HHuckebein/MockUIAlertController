@@ -7,40 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E14BAD41C2C79AB00314F3E /* NSObject+QCOMockAlerts.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E14BAC81C2C79AB00314F3E /* NSObject+QCOMockAlerts.h */; };
-		0E14BAD51C2C79AB00314F3E /* NSObject+QCOMockAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14BAC91C2C79AB00314F3E /* NSObject+QCOMockAlerts.m */; };
-		0E14BAD61C2C79AB00314F3E /* QCOMockAlertVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E14BACA1C2C79AB00314F3E /* QCOMockAlertVerifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E14BAD71C2C79AB00314F3E /* QCOMockAlertVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14BACB1C2C79AB00314F3E /* QCOMockAlertVerifier.m */; };
-		0E14BAD81C2C79AB00314F3E /* QCOMockPopoverPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E14BACC1C2C79AB00314F3E /* QCOMockPopoverPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E14BAD91C2C79AB00314F3E /* QCOMockPopoverPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14BACD1C2C79AB00314F3E /* QCOMockPopoverPresentationController.m */; };
-		0E14BADA1C2C79AB00314F3E /* UIAlertAction+QCOMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E14BACE1C2C79AB00314F3E /* UIAlertAction+QCOMock.h */; };
-		0E14BADB1C2C79AB00314F3E /* UIAlertAction+QCOMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14BACF1C2C79AB00314F3E /* UIAlertAction+QCOMock.m */; };
-		0E14BADC1C2C79AB00314F3E /* UIAlertController+QCOMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E14BAD01C2C79AB00314F3E /* UIAlertController+QCOMock.h */; };
-		0E14BADD1C2C79AB00314F3E /* UIAlertController+QCOMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14BAD11C2C79AB00314F3E /* UIAlertController+QCOMock.m */; };
-		0E14BADE1C2C79AB00314F3E /* UIViewController+QCOMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E14BAD21C2C79AB00314F3E /* UIViewController+QCOMock.h */; };
-		0E14BADF1C2C79AB00314F3E /* UIViewController+QCOMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14BAD31C2C79AB00314F3E /* UIViewController+QCOMock.m */; };
+		73D6C06F1EA21C4600C2BC0B /* MockUIAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D6C06D1EA21C4600C2BC0B /* MockUIAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D6C0761EA21C5400C2BC0B /* QCOMockAlertVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6C0731EA21C5400C2BC0B /* QCOMockAlertVerifier.swift */; };
+		73D6C0771EA21C5400C2BC0B /* QCOMockPopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6C0741EA21C5400C2BC0B /* QCOMockPopoverPresentationController.swift */; };
+		73D6C0781EA21C5400C2BC0B /* QCOExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6C0751EA21C5400C2BC0B /* QCOExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E14BAA81C2C619300314F3E /* MockUIAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MockUIAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E14BAC21C2C62EE00314F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E14BAC41C2C782700314F3E /* XcodeWarnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XcodeWarnings.xcconfig; sourceTree = "<group>"; };
-		0E14BAC81C2C79AB00314F3E /* NSObject+QCOMockAlerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+QCOMockAlerts.h"; sourceTree = "<group>"; };
-		0E14BAC91C2C79AB00314F3E /* NSObject+QCOMockAlerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QCOMockAlerts.m"; sourceTree = "<group>"; };
-		0E14BACA1C2C79AB00314F3E /* QCOMockAlertVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCOMockAlertVerifier.h; sourceTree = "<group>"; };
-		0E14BACB1C2C79AB00314F3E /* QCOMockAlertVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCOMockAlertVerifier.m; sourceTree = "<group>"; };
-		0E14BACC1C2C79AB00314F3E /* QCOMockPopoverPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCOMockPopoverPresentationController.h; sourceTree = "<group>"; };
-		0E14BACD1C2C79AB00314F3E /* QCOMockPopoverPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCOMockPopoverPresentationController.m; sourceTree = "<group>"; };
-		0E14BACE1C2C79AB00314F3E /* UIAlertAction+QCOMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+QCOMock.h"; sourceTree = "<group>"; };
-		0E14BACF1C2C79AB00314F3E /* UIAlertAction+QCOMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+QCOMock.m"; sourceTree = "<group>"; };
-		0E14BAD01C2C79AB00314F3E /* UIAlertController+QCOMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+QCOMock.h"; sourceTree = "<group>"; };
-		0E14BAD11C2C79AB00314F3E /* UIAlertController+QCOMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+QCOMock.m"; sourceTree = "<group>"; };
-		0E14BAD21C2C79AB00314F3E /* UIViewController+QCOMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+QCOMock.h"; sourceTree = "<group>"; };
-		0E14BAD31C2C79AB00314F3E /* UIViewController+QCOMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+QCOMock.m"; sourceTree = "<group>"; };
+		73D6C06B1EA21C4600C2BC0B /* MockUIAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MockUIAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D6C06D1EA21C4600C2BC0B /* MockUIAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockUIAlertController.h; sourceTree = "<group>"; };
+		73D6C06E1EA21C4600C2BC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D6C0731EA21C5400C2BC0B /* QCOMockAlertVerifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCOMockAlertVerifier.swift; sourceTree = "<group>"; };
+		73D6C0741EA21C5400C2BC0B /* QCOMockPopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCOMockPopoverPresentationController.swift; sourceTree = "<group>"; };
+		73D6C0751EA21C5400C2BC0B /* QCOExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCOExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E14BAA41C2C619300314F3E /* Frameworks */ = {
+		73D6C0671EA21C4600C2BC0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,7 +38,7 @@
 		0E14BA9E1C2C619300314F3E = {
 			isa = PBXGroup;
 			children = (
-				0E14BAAA1C2C619300314F3E /* MockUIAlertController */,
+				73D6C06C1EA21C4600C2BC0B /* MockUIAlertController */,
 				0E14BAC11C2C628800314F3E /* Supporting Files */,
 				0E14BAA91C2C619300314F3E /* Products */,
 			);
@@ -62,28 +47,9 @@
 		0E14BAA91C2C619300314F3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E14BAA81C2C619300314F3E /* MockUIAlertController.framework */,
+				73D6C06B1EA21C4600C2BC0B /* MockUIAlertController.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0E14BAAA1C2C619300314F3E /* MockUIAlertController */ = {
-			isa = PBXGroup;
-			children = (
-				0E14BAC81C2C79AB00314F3E /* NSObject+QCOMockAlerts.h */,
-				0E14BAC91C2C79AB00314F3E /* NSObject+QCOMockAlerts.m */,
-				0E14BACA1C2C79AB00314F3E /* QCOMockAlertVerifier.h */,
-				0E14BACB1C2C79AB00314F3E /* QCOMockAlertVerifier.m */,
-				0E14BACC1C2C79AB00314F3E /* QCOMockPopoverPresentationController.h */,
-				0E14BACD1C2C79AB00314F3E /* QCOMockPopoverPresentationController.m */,
-				0E14BACE1C2C79AB00314F3E /* UIAlertAction+QCOMock.h */,
-				0E14BACF1C2C79AB00314F3E /* UIAlertAction+QCOMock.m */,
-				0E14BAD01C2C79AB00314F3E /* UIAlertController+QCOMock.h */,
-				0E14BAD11C2C79AB00314F3E /* UIAlertController+QCOMock.m */,
-				0E14BAD21C2C79AB00314F3E /* UIViewController+QCOMock.h */,
-				0E14BAD31C2C79AB00314F3E /* UIViewController+QCOMock.m */,
-			);
-			path = MockUIAlertController;
 			sourceTree = "<group>";
 		};
 		0E14BAC11C2C628800314F3E /* Supporting Files */ = {
@@ -95,33 +61,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		73D6C06C1EA21C4600C2BC0B /* MockUIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				73D6C06E1EA21C4600C2BC0B /* Info.plist */,
+				73D6C06D1EA21C4600C2BC0B /* MockUIAlertController.h */,
+				73D6C0731EA21C5400C2BC0B /* QCOMockAlertVerifier.swift */,
+				73D6C0741EA21C5400C2BC0B /* QCOMockPopoverPresentationController.swift */,
+				73D6C0751EA21C5400C2BC0B /* QCOExtensions.swift */,
+			);
+			path = MockUIAlertController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0E14BAA51C2C619300314F3E /* Headers */ = {
+		73D6C0681EA21C4600C2BC0B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E14BAD81C2C79AB00314F3E /* QCOMockPopoverPresentationController.h in Headers */,
-				0E14BADA1C2C79AB00314F3E /* UIAlertAction+QCOMock.h in Headers */,
-				0E14BAD41C2C79AB00314F3E /* NSObject+QCOMockAlerts.h in Headers */,
-				0E14BADE1C2C79AB00314F3E /* UIViewController+QCOMock.h in Headers */,
-				0E14BAD61C2C79AB00314F3E /* QCOMockAlertVerifier.h in Headers */,
-				0E14BADC1C2C79AB00314F3E /* UIAlertController+QCOMock.h in Headers */,
+				73D6C06F1EA21C4600C2BC0B /* MockUIAlertController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0E14BAA71C2C619300314F3E /* MockUIAlertController */ = {
+		73D6C06A1EA21C4600C2BC0B /* MockUIAlertController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E14BAB01C2C619300314F3E /* Build configuration list for PBXNativeTarget "MockUIAlertController" */;
+			buildConfigurationList = 73D6C0701EA21C4600C2BC0B /* Build configuration list for PBXNativeTarget "MockUIAlertController" */;
 			buildPhases = (
-				0E14BAA31C2C619300314F3E /* Sources */,
-				0E14BAA41C2C619300314F3E /* Frameworks */,
-				0E14BAA51C2C619300314F3E /* Headers */,
-				0E14BAA61C2C619300314F3E /* Resources */,
+				73D6C0661EA21C4600C2BC0B /* Sources */,
+				73D6C0671EA21C4600C2BC0B /* Frameworks */,
+				73D6C0681EA21C4600C2BC0B /* Headers */,
+				73D6C0691EA21C4600C2BC0B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,7 +102,7 @@
 			);
 			name = MockUIAlertController;
 			productName = MockUIAlertController;
-			productReference = 0E14BAA81C2C619300314F3E /* MockUIAlertController.framework */;
+			productReference = 73D6C06B1EA21C4600C2BC0B /* MockUIAlertController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -141,8 +114,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jon Reid";
 				TargetAttributes = {
-					0E14BAA71C2C619300314F3E = {
-						CreatedOnToolsVersion = 7.2;
+					73D6C06A1EA21C4600C2BC0B = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -158,13 +133,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E14BAA71C2C619300314F3E /* MockUIAlertController */,
+				73D6C06A1EA21C4600C2BC0B /* MockUIAlertController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0E14BAA61C2C619300314F3E /* Resources */ = {
+		73D6C0691EA21C4600C2BC0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -174,16 +149,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E14BAA31C2C619300314F3E /* Sources */ = {
+		73D6C0661EA21C4600C2BC0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E14BAD71C2C79AB00314F3E /* QCOMockAlertVerifier.m in Sources */,
-				0E14BAD91C2C79AB00314F3E /* QCOMockPopoverPresentationController.m in Sources */,
-				0E14BADB1C2C79AB00314F3E /* UIAlertAction+QCOMock.m in Sources */,
-				0E14BAD51C2C79AB00314F3E /* NSObject+QCOMockAlerts.m in Sources */,
-				0E14BADF1C2C79AB00314F3E /* UIViewController+QCOMock.m in Sources */,
-				0E14BADD1C2C79AB00314F3E /* UIAlertController+QCOMock.m in Sources */,
+				73D6C0781EA21C5400C2BC0B /* QCOExtensions.swift in Sources */,
+				73D6C0761EA21C5400C2BC0B /* QCOMockAlertVerifier.swift in Sources */,
+				73D6C0771EA21C5400C2BC0B /* QCOMockPopoverPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,29 +205,109 @@
 			};
 			name = Release;
 		};
-		0E14BAB11C2C619300314F3E /* Debug */ = {
+		73D6C0711EA21C4600C2BC0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Info.plist;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MockUIAlertController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.qualitycoding.MockUIAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		0E14BAB21C2C619300314F3E /* Release */ = {
+		73D6C0721EA21C4600C2BC0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Info.plist;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MockUIAlertController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = org.qualitycoding.MockUIAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -271,11 +323,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E14BAB01C2C619300314F3E /* Build configuration list for PBXNativeTarget "MockUIAlertController" */ = {
+		73D6C0701EA21C4600C2BC0B /* Build configuration list for PBXNativeTarget "MockUIAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E14BAB11C2C619300314F3E /* Debug */,
-				0E14BAB21C2C619300314F3E /* Release */,
+				73D6C0711EA21C4600C2BC0B /* Debug */,
+				73D6C0721EA21C4600C2BC0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

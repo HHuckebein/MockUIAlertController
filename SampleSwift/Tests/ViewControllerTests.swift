@@ -1,4 +1,5 @@
 import XCTest
+import MockUIAlertController
 @testable import MockUIAlertControllerSampleSwift
 
 class ViewControllerTests: XCTestCase {
@@ -91,20 +92,20 @@ class ViewControllerTests: XCTestCase {
         sut.showAlertButton.sendActions(for: .touchUpInside)
 
         XCTAssertEqual(alertVerifier.actionTitles.count, 4);
-        XCTAssertEqual(alertVerifier.actionTitles[0] as? String, "No Handler");
-        XCTAssertEqual(alertVerifier.actionTitles[1] as? String, "Default");
-        XCTAssertEqual(alertVerifier.actionTitles[2] as? String, "Cancel");
-        XCTAssertEqual(alertVerifier.actionTitles[3] as? String, "Destroy");
+        XCTAssertEqual(alertVerifier.actionTitles[0], "No Handler");
+        XCTAssertEqual(alertVerifier.actionTitles[1], "Default");
+        XCTAssertEqual(alertVerifier.actionTitles[2], "Cancel");
+        XCTAssertEqual(alertVerifier.actionTitles[3], "Destroy");
     }
 
     func testShowActionSheet_PresentedActionSheetShouldHaveActions() {
         sut.showActionSheetButton.sendActions(for: .touchUpInside)
 
         XCTAssertEqual(alertVerifier.actionTitles.count, 4);
-        XCTAssertEqual(alertVerifier.actionTitles[0] as? String, "No Handler");
-        XCTAssertEqual(alertVerifier.actionTitles[1] as? String, "Default");
-        XCTAssertEqual(alertVerifier.actionTitles[2] as? String, "Cancel");
-        XCTAssertEqual(alertVerifier.actionTitles[3] as? String, "Destroy");
+        XCTAssertEqual(alertVerifier.actionTitles[0], "No Handler");
+        XCTAssertEqual(alertVerifier.actionTitles[1], "Default");
+        XCTAssertEqual(alertVerifier.actionTitles[2], "Cancel");
+        XCTAssertEqual(alertVerifier.actionTitles[3], "Destroy");
     }
 
     func testShowAlert_DefaultButtonShouldHaveDefaultStyle() {
