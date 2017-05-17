@@ -3,7 +3,7 @@
 
 // Test support
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
-#import <MockUIAlertController/QCOMockAlertVerifier.h>
+@import MockUIAlertController;
 @import XCTest;
 
 
@@ -78,14 +78,14 @@
 {
     [sut.showAlertButton sendActionsForControlEvents:UIControlEventTouchUpInside];
 
-    assertThat(alertVerifier.animated, is(@YES));
+    assertThatBool(alertVerifier.animated, isTrue());
 }
 
 - (void)testShowActionSheet_ShouldPresentWithAnimation
 {
     [sut.showActionSheetButton sendActionsForControlEvents:UIControlEventTouchUpInside];
 
-    assertThat(alertVerifier.animated, is(@YES));
+    assertThatBool(alertVerifier.animated, isTrue());
 }
 
 - (void)testShowAlert_PresentedAlertShouldHaveTitle
