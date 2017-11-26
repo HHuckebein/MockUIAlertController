@@ -48,7 +48,7 @@ public class QCOMockAlertVerifier: NSObject {
         NotificationCenter.default.removeObserver(self)
     }
     
-    func alertControllerWasPresented(_ notification: Notification) {
+    @objc func alertControllerWasPresented(_ notification: Notification) {
         guard let alertController = notification.object as? UIAlertController else {
             return
         }
