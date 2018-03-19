@@ -14,13 +14,13 @@ extension NSObject {
     static func replace(classMethodWithSelector orgSelector: Selector, withSelector swizzledSelector: Selector) {
         let orgMethod = class_getClassMethod(self, orgSelector)
         let swizzledMethod = class_getClassMethod(self, swizzledSelector)
-        method_exchangeImplementations(orgMethod, swizzledMethod)
+        method_exchangeImplementations(orgMethod!, swizzledMethod!)
     }
 
     static func replace(instanceMethodWithSelector orgSelector: Selector, withSelector swizzledSelector: Selector) {
         let orgMethod = class_getInstanceMethod(self, orgSelector)
         let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
-        method_exchangeImplementations(orgMethod, swizzledMethod)
+        method_exchangeImplementations(orgMethod!, swizzledMethod!)
     }
 }
 
@@ -41,7 +41,7 @@ extension UIViewController {
         replace(instanceMethodWithSelector: orgSel, withSelector: swizzleSel)
     }
     
-    dynamic func qcoPresent(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
+    @objc dynamic func qcoPresent(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
         guard  let ctrl = viewControllerToPresent as? UIAlertController else {
             return
         }
@@ -77,7 +77,7 @@ extension UIAlertController {
         replace(classMethodWithSelector: orgSel, withSelector: swizzleSel)
     }
 
-    var qcoStyle: UIAlertControllerStyle {
+    @objc var qcoStyle: UIAlertControllerStyle {
         get {
             return objc_getAssociatedObject(self, &QCOAssociatedObj.preferredAlertControllerStyle) as! UIAlertControllerStyle
         }
@@ -86,7 +86,7 @@ extension UIAlertController {
         }
     }
     
-    var qcoPopover: QCOMockPopoverPresentationController {
+    @objc var qcoPopover: QCOMockPopoverPresentationController {
         get {
             return objc_getAssociatedObject(self, &QCOAssociatedObj.popoverPresentationController) as! QCOMockPopoverPresentationController
         }
@@ -95,7 +95,7 @@ extension UIAlertController {
         }
     }
     
-    dynamic static func initWith(title: String?, message: String?, preferredStyle: UIAlertControllerStyle) -> UIAlertController {
+    @objc dynamic static func initWith(title: String?, message: String?, preferredStyle: UIAlertControllerStyle) -> UIAlertController {
         let ctrl = self.init()
         ctrl.title = title
         ctrl.message = message
@@ -140,7 +140,7 @@ extension UIAlertAction {
         }
     }
     
-    var qcoTitle: String? {
+    @objc var qcoTitle: String? {
         get {
             return objc_getAssociatedObject(self, &QCOAssociatedObj.title) as? String
         }
@@ -149,7 +149,7 @@ extension UIAlertAction {
         }
     }
     
-    var qcoStyle: UIAlertActionStyle {
+    @objc var qcoStyle: UIAlertActionStyle {
         get {
             return objc_getAssociatedObject(self, &QCOAssociatedObj.style) as! UIAlertActionStyle
         }
@@ -158,7 +158,7 @@ extension UIAlertAction {
         }
     }
     
-    dynamic static func initWith(title: String?, style: UIAlertActionStyle, handler: QCOAlertActionHandler? = nil) -> UIAlertAction {
+    @objc dynamic static func initWith(title: String?, style: UIAlertActionStyle, handler: QCOAlertActionHandler? = nil) -> UIAlertAction {
         let action = self.init()
         action.qcoTitle = title
         action.qcoStyle = style

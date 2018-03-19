@@ -12,21 +12,21 @@ public class QCOMockAlertVerifier: NSObject {
     private(set) var actions = [UIAlertAction]()
     private var _popover: AnyObject?
     
-    public private(set) var presentedCount = 0
-    public private(set) var title: String?
-    public private(set) var message: String?
-    public private(set) var animated: Bool = false
-    public private(set) var preferredStyle: UIAlertControllerStyle = .alert
+    @objc public private(set) var presentedCount = 0
+    @objc public private(set) var title: String?
+    @objc public private(set) var message: String?
+    @objc public private(set) var animated: Bool = false
+    @objc public private(set) var preferredStyle: UIAlertControllerStyle = .alert
 
-    public var actionTitles: [String] {
+    @objc public var actionTitles: [String] {
         return actions.flatMap({ $0.title })
     }
     
-    public var popover: QCOMockPopoverPresentationController? {
+    @objc public var popover: QCOMockPopoverPresentationController? {
         return _popover as? QCOMockPopoverPresentationController
     }
     
-    public func executeActionForButton(withTitle title: String) {
+    @objc public func executeActionForButton(withTitle title: String) {
         if let action = action(withTitle: title), let handler = action.qcoHandler {
             handler(action)
         }
@@ -36,7 +36,7 @@ public class QCOMockAlertVerifier: NSObject {
         return action(withTitle: title)?.style
     }
     
-    override public init() {
+    @objc override public init() {
         super.init()
         swizzle()
         let sel = #selector(alertControllerWasPresented(_:))
@@ -48,7 +48,7 @@ public class QCOMockAlertVerifier: NSObject {
         NotificationCenter.default.removeObserver(self)
     }
     
-    func alertControllerWasPresented(_ notification: Notification) {
+    @objc func alertControllerWasPresented(_ notification: Notification) {
         guard let alertController = notification.object as? UIAlertController else {
             return
         }
